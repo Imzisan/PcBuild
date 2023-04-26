@@ -25,5 +25,13 @@ namespace DAL
         {
             return new OrderRepo();
         }
+        public static IRepo<Admin, int, Admin> AdminData()
+        {
+            return new AdminRepo();
+        }
+        public static IRepo<Moderator, int, Moderator> ModeratorData()
+        {
+            return new ModeratorRepo();
+        }
     }
 }

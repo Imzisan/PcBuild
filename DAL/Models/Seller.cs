@@ -25,6 +25,11 @@ namespace DAL.Models
         [Required]
         public string NidNumber  { get; set; }
 
+        public int AdminId { get; set; }
+
+
+        public virtual Admin Admin { get; set; }
+
 
     }
 }

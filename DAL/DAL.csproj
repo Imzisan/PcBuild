@@ -53,20 +53,14 @@
   <ItemGroup>
     <Compile Include="DataAccessFactory.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
-    <Compile Include="Migrations\202304211149304_InitSellerT.cs" />
-    <Compile Include="Migrations\202304211149304_InitSellerT.designer.cs">
-      <DependentUpon>202304211149304_InitSellerT.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202304211207590_seedSellerData.cs" />
-    <Compile Include="Migrations\202304211207590_seedSellerData.designer.cs">
-      <DependentUpon>202304211207590_seedSellerData.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202304242152172_RecreatedTables.cs" />
-    <Compile Include="Migrations\202304242152172_RecreatedTables.designer.cs">
-      <DependentUpon>202304242152172_RecreatedTables.cs</DependentUpon>
+    <Compile Include="Migrations\202304260835068_inint.cs" />
+    <Compile Include="Migrations\202304260835068_inint.designer.cs">
+      <DependentUpon>202304260835068_inint.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Cart.cs" />
+    <Compile Include="Models\Moderator.cs" />
     <Compile Include="Models\Review.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\User_Order.cs" />
@@ -75,6 +69,8 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Seller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repos\AdminRepo.cs" />
+    <Compile Include="Repos\ModeratorRepo.cs" />
     <Compile Include="Repos\OrderRepo.cs" />
     <Compile Include="Repos\ProductRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
@@ -85,17 +81,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202304211149304_InitSellerT.resx">
-      <DependentUpon>202304211149304_InitSellerT.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202304211207590_seedSellerData.resx">
-      <DependentUpon>202304211207590_seedSellerData.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202304242152172_RecreatedTables.resx">
-      <DependentUpon>202304242152172_RecreatedTables.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202304260835068_inint.resx">
+      <DependentUpon>202304260835068_inint.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

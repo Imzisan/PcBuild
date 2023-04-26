@@ -29,3 +29,17 @@ C:\Users\Nadim\Desktop\PcBuild\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\Nadim\Desktop\PcBuild\DAL\obj\Debug\DAL.dll
 C:\Users\Nadim\Desktop\PcBuild\DAL\obj\Debug\DAL.pdb
 C:\Users\Nadim\Desktop\PcBuild\DAL\obj\Debug\DAL.Migrations.RecreatedTables.resources
+C:\Users\pc\Source\Repos\PcBuild\DAL\bin\Debug\DAL.dll.config
+C:\Users\pc\Source\Repos\PcBuild\DAL\bin\Debug\DAL.dll
+C:\Users\pc\Source\Repos\PcBuild\DAL\bin\Debug\DAL.pdb
+C:\Users\pc\Source\Repos\PcBuild\DAL\bin\Debug\EntityFramework.dll
+C:\Users\pc\Source\Repos\PcBuild\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pc\Source\Repos\PcBuild\DAL\bin\Debug\EntityFramework.xml
+C:\Users\pc\Source\Repos\PcBuild\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pc\Source\Repos\PcBuild\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\pc\Source\Repos\PcBuild\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\pc\Source\Repos\PcBuild\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\pc\Source\Repos\PcBuild\DAL\obj\Debug\DAL.dll
+C:\Users\pc\Source\Repos\PcBuild\DAL\obj\Debug\DAL.pdb
+C:\Users\pc\Source\Repos\PcBuild\DAL\obj\Debug\DAL.Migrations.inint.resources
+C:\Users\pc\Source\Repos\PcBuild\DAL\obj\Debug\DAL.csproj.GenerateResource.cache

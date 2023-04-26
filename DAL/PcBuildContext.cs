@@ -20,6 +20,10 @@ namespace DAL
         public DbSet<Cart> Carts { get; set; }
         public DbSet<Review> Reviews { get; set; }
 
+        public DbSet<Admin> Admins { get; set; }
+
+        public DbSet<Moderator> Moderators { get; set; }
+
 
     }
 }

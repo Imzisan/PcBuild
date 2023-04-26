@@ -7,13 +7,13 @@ namespace DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class RecreatedTables : IMigrationMetadata
+    public sealed partial class inint : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(RecreatedTables));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(inint));
         
         string IMigrationMetadata.Id
         {
-            get { return "202304242152172_RecreatedTables"; }
+            get { return "202304260835068_inint"; }
         }
         
         string IMigrationMetadata.Source
