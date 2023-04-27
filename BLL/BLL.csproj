@@ -48,12 +48,17 @@
     <Compile Include="Class1.cs" />
     <Compile Include="DTOs\AdminDTO.cs" />
     <Compile Include="DTOs\ModeratorDTO.cs" />
+    <Compile Include="DTOs\ModeratorSalesReportDTO.cs" />
     <Compile Include="DTOs\OrderDTO.cs" />
     <Compile Include="DTOs\OrderProductDTO.cs" />
     <Compile Include="DTOs\ProductDTO.cs" />
     <Compile Include="DTOs\ProductSellerDTO.cs" />
+    <Compile Include="DTOs\SalesReportDTO.cs" />
     <Compile Include="DTOs\SellerDTO.cs" />
+    <Compile Include="DTOs\TokenDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AdminService.cs" />
+    <Compile Include="Services\AuthService.cs" />
     <Compile Include="Services\ModeratorService.cs" />
     <Compile Include="Services\OrderService.cs" />
     <Compile Include="Services\ProductService.cs" />

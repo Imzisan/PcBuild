@@ -8,15 +8,23 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class AdminRepo : Repo, IRepo<Admin, int, Admin>
+    internal class AdminRepo : Repo, IRepo<Admin, string, Admin>,IAuth<bool>
     {
+        public bool Authenticate(string username, string password)
+        {
+            var data = db.Admins.FirstOrDefault(a => a.UserName.Equals(username) && a.Password.Equals(password));//
+            if (data != null)
+                return true;
+            return false;
+        }
+
         public Admin Create(Admin obj)
         {
             db.Admins.Add(obj);
             if(db.SaveChanges()>0)return obj;else return null;
         }
 
-        public bool Delete(int id)
+        public bool Delete(string id)
         {
             var ex=Read(id); db.Admins.Remove(ex);
             return db.SaveChanges() > 0;
@@ -28,14 +36,14 @@ namespace DAL.Repos
 
         }
 
-        public Admin Read(int id)
+        public Admin Read(string id)
         {
             return db.Admins.Find(id);
         }
 
         public Admin Update(Admin Obj)
         {
-            var ex = Read(Obj.Id);
+            var ex = Read(Obj.UserName);
             db.Entry(ex).CurrentValues.SetValues(Obj) ;
             if(db.SaveChanges()>0)return Obj;
             else return null;

@@ -25,13 +25,29 @@ namespace DAL
         {
             return new OrderRepo();
         }
-        public static IRepo<Admin, int, Admin> AdminData()
+        public static IRepo<Admin, string, Admin> AdminData()
         {
             return new AdminRepo();
         }
-        public static IRepo<Moderator, int, Moderator> ModeratorData()
+        public static IRepo<Moderator, string, Moderator> ModeratorData()
         {
             return new ModeratorRepo();
+        }
+        public static IRepo<SalesReport, int, SalesReport> SalesReportData()
+        {
+            return new SalesReportRepo();
+        }
+        public static IAuth<bool> AuthData()
+        {
+            return new AdminRepo();
+        }
+        public static IAuth<bool> ModeratorAuthData()
+        {
+            return new ModeratorRepo();
+        }
+        public static IRepo<Token,string,Token >TokenData()
+        {
+            return new TokenRepo();
         }
     }
 }

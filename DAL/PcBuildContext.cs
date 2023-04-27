@@ -23,6 +23,9 @@ namespace DAL
         public DbSet<Admin> Admins { get; set; }
 
         public DbSet<Moderator> Moderators { get; set; }
+        public DbSet<SalesReport> SalesReports { get; set; }
+
+        public DbSet<Token> Tokens { get; set; }
 
 
     }

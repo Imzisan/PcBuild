@@ -52,16 +52,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccessFactory.cs" />
+    <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
-    <Compile Include="Migrations\202304260835068_inint.cs" />
-    <Compile Include="Migrations\202304260835068_inint.designer.cs">
-      <DependentUpon>202304260835068_inint.cs</DependentUpon>
+    <Compile Include="Migrations\202304271538243_populate.cs" />
+    <Compile Include="Migrations\202304271538243_populate.designer.cs">
+      <DependentUpon>202304271538243_populate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304271932449_mod.cs" />
+    <Compile Include="Migrations\202304271932449_mod.designer.cs">
+      <DependentUpon>202304271932449_mod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202304271953591_ad.cs" />
+    <Compile Include="Migrations\202304271953591_ad.designer.cs">
+      <DependentUpon>202304271953591_ad.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\Moderator.cs" />
     <Compile Include="Models\Review.cs" />
+    <Compile Include="Models\SalesReport.cs" />
+    <Compile Include="Models\Token.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\User_Order.cs" />
     <Compile Include="PcBuildContext.cs" />
@@ -74,15 +85,23 @@
     <Compile Include="Repos\OrderRepo.cs" />
     <Compile Include="Repos\ProductRepo.cs" />
     <Compile Include="Repos\Repo.cs" />
+    <Compile Include="Repos\SalesReportRepo.cs" />
     <Compile Include="Repos\SellerRepo.cs" />
+    <Compile Include="Repos\TokenRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202304260835068_inint.resx">
-      <DependentUpon>202304260835068_inint.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202304271538243_populate.resx">
+      <DependentUpon>202304271538243_populate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304271932449_mod.resx">
+      <DependentUpon>202304271932449_mod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304271953591_ad.resx">
+      <DependentUpon>202304271953591_ad.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

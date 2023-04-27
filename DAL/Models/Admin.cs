@@ -10,22 +10,31 @@ namespace DAL.Models
     public class Admin
     {
         [Key]
-        public int Id { get; set; }
 
+        public string UserName { get; set; }
+
+        [Required]
+        [StringLength(20)]
         public string Name { get; set; }
-        public string Email { get; set; }
-
+        [Required]
+        [StringLength(20)]
         public string Password { get; set; }
+        [Required]
+        [StringLength(11)]
 
         public string Phone { get; set; }
 
         public virtual ICollection<Moderator> Moderators { get; set; }
         public virtual ICollection<Seller> Sellers { get; set; }
 
+        public virtual ICollection<SalesReport> SalesReports { get; set; }
+
         public Admin()
         {
             Moderators = new List<Moderator>();
             Sellers = new List<Seller>();
+            SalesReports = new List<SalesReport>();
+            
         }
     }
 }
