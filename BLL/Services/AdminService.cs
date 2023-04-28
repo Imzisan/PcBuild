@@ -62,6 +62,7 @@ namespace BLL.Services
             var res = DataAccessFactory.AdminData().Create(mapped);
             return mapped;
         }
+
         public static bool Delete(string id)
         {
             return DataAccessFactory.AdminData().Delete(id);
